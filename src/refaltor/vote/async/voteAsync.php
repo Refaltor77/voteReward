@@ -59,6 +59,7 @@ class voteAsync extends AsyncTask
                     case 'commands':
                         $array = $plugin->getConfig()->get("rewards_commands");
                         foreach ($array as $cmd){
+                            $cmd = str_replace("/", "", $cmd);
                             $server->dispatchCommand($player, $cmd);
                         }
                         break;
