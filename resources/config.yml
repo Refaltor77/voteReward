@@ -7,11 +7,11 @@ command:
 
 message_has_not_voted:
   enable: true
-  mesasge: "§e[§6vote§e] §cYou did not vote !"
+  message: "§e[§6vote§e] §cYou did not vote !"
 
 message_has_already_voted:
   enable: true
-  mesasge: "§e[§6vote§e] §cYou already voted for the server !"
+  message: "§e[§6vote§e] §cYou already voted for the server !"
 
 message_player:
   enable: true
