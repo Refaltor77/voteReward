@@ -38,3 +38,5 @@ rewards_commands:
   - "/heal"
 ...
 ```
+
+discord: ! Refaltor#1000
