@@ -23,6 +23,6 @@ class vote extends Command
     {
         if (!$sender instanceof Player) return;
         $server = $this->plugin->getServer();
-        $server->getAsyncPool()->submitTask(new voteAsync($sender->getName(), $this->plugin));
+        $server->getAsyncPool()->submitTask(new voteAsync($sender->getName(), $this->plugin->getConfig()->get("API_KEY")));
     }
 }
