@@ -1,5 +1,5 @@
 ---
-API_KEY: {KEY}
+API_KEY: "KEY"
 
 command:
   usage: vote # /vote in game
