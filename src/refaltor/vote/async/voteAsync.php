@@ -12,8 +12,8 @@ use refaltor\vote\Main;
 class voteAsync extends AsyncTask
 {
 
-    private string $player;
-    public string $key;
+    private $player;
+    public $key;
 
 
     public function __construct(string $player, string $key)
