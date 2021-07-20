@@ -10,7 +10,7 @@ use refaltor\vote\async\voteAsync;
 
 class vote extends Command
 {
-    private Plugin $plugin;
+    private $plugin;
 
     public function __construct(Plugin $plugin)
     {
