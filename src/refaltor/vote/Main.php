@@ -7,7 +7,7 @@ use refaltor\vote\command\vote;
 
 class Main extends PluginBase
 {
-    private static self $instance;
+    private static $instance;
 
     public function onEnable()
     {
