@@ -5,14 +5,14 @@ namespace refaltor\vote\command;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
-use pocketmine\plugin\Plugin;
+use refaltor\vote\Main;
 use refaltor\vote\async\voteAsync;
 
 class vote extends Command
 {
     private $plugin;
 
-    public function __construct(Plugin $plugin)
+    public function __construct(Main $plugin)
     {
         $this->plugin = $plugin;
         $array = $plugin->getConfig()->get('command');
