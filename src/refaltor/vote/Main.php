@@ -14,7 +14,7 @@ class Main extends PluginBase
         self::$instance = $this;
         $this->saveResource('config.yml');
         $array = $this->getConfig()->get('command');
-        $this->getServer()->getCommandMap()->register($array['usage'], new vote($this));
+        $this->getServer()->getCommandMap()->register('vote', new vote($this));
     }
 
     public static function getInstance(): self{
