@@ -12,8 +12,8 @@ use refaltor\vote\Main;
 class voteAsync extends AsyncTask
 {
 
-    private string $player;
-    public string $key;
+    private $player;
+    public $key;
 
 
     public function __construct(string $player, string $key)
@@ -60,7 +60,7 @@ class voteAsync extends AsyncTask
                         $array = $plugin->getConfig()->get("rewards_commands");
                         foreach ($array as $cmd){
                             $cmd = str_replace("/", "", $cmd);
-                            $server->dispatchCommand($player, $cmd);
+                            $server->dispatchCommand($player, str_replace('{player}', $player->getName(), $cmd), true);
                         }
                         break;
                     default:
