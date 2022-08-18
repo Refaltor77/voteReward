@@ -7,11 +7,16 @@ use refaltor\vote\command\vote;
 
 class Main extends PluginBase
 {
-    private static $instance;
+
+    private static self $instance;
+    
+    public function onLoad()
+    {
+        self::$instance = $this;
+    }
 
     public function onEnable()
     {
-        self::$instance = $this;
         $this->saveResource('config.yml');
         $array = $this->getConfig()->get('command');
         $this->getServer()->getCommandMap()->register('vote', new vote($this));
